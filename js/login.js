@@ -13,6 +13,7 @@ if(!user){
   toDo.classList.add('not-login')
 } else {
   loginForm.className="not-login";
+  toDoList.innerText = user+"'s To Do List"
   const getArray = () => JSON.parse(localStorage.getItem("toDos")) ?? []
   const onDeleteHandler = (e) => {
     console.log(e.target.id)
