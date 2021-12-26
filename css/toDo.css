@@ -1,0 +1,18 @@
+.to-do-form {
+  display: flex;
+}
+
+.to-do-input {
+  flex-grow: 1;
+}
+
+.toDos {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}

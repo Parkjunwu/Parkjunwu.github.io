@@ -1,1 +1,57 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css" type="text/css">
+  <link rel="stylesheet" href="css/time.css">
+  <link rel="stylesheet" href="css/toDo.css">
+  <link rel="stylesheet" href="css/location.css">
+  <link rel="stylesheet" href="css/goodSay.css">
+  <link rel="stylesheet" href="css/bgImg.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <form class="login-form">
+        <span>
+          ID : 
+          <input type="text" required placeholder="ID"/>
+        </span>
+        <input type="submit" value="Login">
+      </form>
+      <h1 class="toDoList">ToDo List</h1>
+      <div class="toDo">
+        <form class="to-do-form">
+          <input type="text" required class="to-do-input"/>
+          <input type="submit" value="add ToDo"/>
+        </form>
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="timeFont">
+        <span></span>
+        <span class="second"> : </span>
+        <span></span>
+      </div>
+      <h3></h3>
+    </div>
+    <div class="right">
+      <div class="location"></div>
+    </div>
+  </div>
+  <div class="bottom"></div>
+  <script src="js/index.js"></script>
+  <script src="js/time.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/toDo.js"></script>
+  <script src="js/location.js"></script>
+  <script src="js/goodSay.js"></script>
+</body>
+</html>
