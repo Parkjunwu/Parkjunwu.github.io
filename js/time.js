@@ -28,7 +28,8 @@ setInterval(() => {
 },500)
 
 nowTime()
-const delaySecond = 61-(new Date).getSeconds()
+const delaySecond = (61-(new Date).getSeconds())*1000
+console.log(delaySecond)
 setTimeout(()=>{
   nowTime()
   setInterval(nowTime,60000)
