@@ -1,8 +1,8 @@
 const toDoDiv = document.querySelector(".toDo")
 
 const form = toDoDiv.querySelector("form")
-const newToDo = form.querySelector(".to-do-form")
-
+const newToDo = form.querySelector(".to-do-input")
+console.log(newToDo)
 const toDoLists = toDoDiv.querySelector("ul")
 const onToDoSubmit = (e) => {
   e.preventDefault()
@@ -22,9 +22,10 @@ const onToDoSubmit = (e) => {
     console.log(e.target.id)
     e.path[1].remove();
     const getNewArray = getArray()
+    console.log(getNewArray)
 
-
-    const uploadArray = getNewArray.filter(element => id !== e.target.id)
+    const uploadArray = getNewArray.filter(element => element.id !== id)
+    console.log(uploadArray)
     localStorage.setItem("toDos",JSON.stringify(uploadArray))
   })
   newToDo.value = ""
