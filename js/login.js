@@ -40,6 +40,7 @@ const onLoginHandler = (e) => {
   const id = loginForm.querySelector("input:first-child")
   // console.log(id.value)
   localStorage.setItem("user",id.value)
+  toDoList.innerText = id.value+"'s To Do List"
   loginForm.className="not-login"
   leftDiv.classList.remove("login-left")
   toDoList.classList.remove('not-login')
